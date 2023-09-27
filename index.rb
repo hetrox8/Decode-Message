@@ -1,29 +1,14 @@
-MORSE_CODE = {
-    '.-' => 'A', '-...' => 'B', '-.-.' => 'C', '-..' => 'D',
-    '.' => 'E', '..-.' => 'F', '--.' => 'G', '....' => 'H',
-    '..' => 'I', '.---' => 'J', '-.-' => 'K', '.-..' => 'L',
-    '--' => 'M', '-.' => 'N', '---' => 'O', '.--.' => 'P',
-    '--.-' => 'Q', '.-.' => 'R', '...' => 'S', '-' => 'T',
-    '..-' => 'U', '...-' => 'V', '.--' => 'W', '-..-' => 'X',
-    '-.--' => 'Y', '--..' => 'Z', '-----' => '0', '.----' => '1',
-    '..---' => '2', '...--' => '3', '....-' => '4', '.....' => '5',
-    '-....' => '6', '--...' => '7', '---..' => '8', '----.' => '9'
+def decode(morse)
+  morse_code = {
+    'A' => '.-', 'B' => '-...', 'C' => '-.-.', 'D' => '-..', 'E' => '.', 'F' => '..-.', 'G' => '--.', 'H' => '....',
+    'I' => '..', 'J' => '.---', 'K' => '-.-', 'L' => '.-..', 'M' => '--', 'N' => '-.', 'O' => '---', 'P' => '.--.',
+    'Q' => '--.-', 'R' => '.-.', 'S' => '...', 'T' => '-', 'U' => '..-', 'V' => '...-', 'W' => '.--',
+    'X' => '-..-', 'Y' => '-.--', 'Z' => '--..', ' ' => '/'
   }
-
-  def decode_char(morse_char)
-    MORSE_CODE[morse_char] || ''
+  morse = morse.gsub!('  ', '/')
+  morse.split.each do |el|
+    print morse_code.key(el)
+  end
 end
 
-def decode_word(morse_word)
-    morse_chars = morse_word.split(' ')  # Separate Morse characters by space
-    decoded_word = morse_chars.map { |char| decode_char(char) }.join
-    decoded_word
-end
-
-morse_message = "-- -.--   -. .- -- ."
-decoded_message = decode(morse_message)
-puts decoded_message  # Output: "MY NAME"
-
-morse_message2 = ".-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ..."
-decoded_message2 = decode(morse_message2)
-puts decoded_message2  # Output: "ABOVE FULL OF RUBIES"
+decode('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
