@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Define a hash to map Morse code to characters
 MORSE_CODE = {
   '.-' => 'A', '-...' => 'B', '-.-.' => 'C', '-..' => 'D', '.' => 'E',
@@ -26,6 +28,6 @@ def decode(message)
 end
 
 # Example usage to decode the message from the old bottle
-morse_message = ".-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ..."
+morse_message = '.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...'
 decoded_message = decode(morse_message)
 puts decoded_message  # Output: "ABOVE FULL OF RUBIES"
