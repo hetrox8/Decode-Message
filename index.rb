@@ -1,6 +1,5 @@
 require_relative 'alphabet'
 
-
 # Method to decode character in uppercase
 def decode_char(morse_alphabet)
   ALPHABET[morse_alphabet]
