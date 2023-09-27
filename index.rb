@@ -20,3 +20,10 @@ def decode_word(morse_word)
     decoded_word
 end
 
+morse_message = "-- -.--   -. .- -- ."
+decoded_message = decode(morse_message)
+puts decoded_message  # Output: "MY NAME"
+
+morse_message2 = ".-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ..."
+decoded_message2 = decode(morse_message2)
+puts decoded_message2  # Output: "ABOVE FULL OF RUBIES"
