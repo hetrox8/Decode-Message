@@ -57,12 +57,11 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [medical clinic database] <a name="about-project"></a>
+# 📖 [Decode a Morse code message] <a name="about-project"></a>
 
 > In this project, I use a relational database to create the initial data structure for  Medical clinic . I create a table to store patient's information, insert some data into it, and query it.
 
-**[medical clinic database]** this is a medical database where we can track patients medical history from previous dates and institution where admitted.
-
+**[Decode a Morse code message]** this is a Decode a Morse code message is a ruby project that tries to decode the  Morse code.
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
@@ -151,10 +150,7 @@ To run tests, run the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Add patients table]**
-- [ ] **[Add medical histories table]**
-- [ ] **[Add invoices table]**
-
+- [ ] **[Decode message]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
