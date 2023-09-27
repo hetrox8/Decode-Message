@@ -2,11 +2,8 @@
 
 ## Getting Started
 
-This repository includes files with plain SQL that can be used to recreate a database:
+This repository includes files with plain Ruby:
 
-- Use [schema.sql](./schema.sql) to create all tables.
-- Use [data.sql](./data.sql) to populate tables with sample data.
-- Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database. **Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!**
 
 <a name="readme-top"></a>
 
@@ -67,9 +64,9 @@ After you're finished please remove all the comments and instructions!
 ### Tech Stack <a name="tech-stack"></a>
 
 <details>
-  <summary>Database</summary>
+  <summary>Ruby</summary>
   <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
+    <li><a href="https://www.ruby-lang.org/en/">Ruby</a></li>
   </ul>
 </details>
 
@@ -77,8 +74,7 @@ After you're finished please remove all the comments and instructions!
 
 ### Key Features <a name="key-features"></a>
 
-- **[Create database]**
-- **[modify database to many-many]**
+- **[Use Ruby Basics]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -106,14 +102,14 @@ After cloning this repository to your desired folder:
 
 Install this project with:
 
-[PostgreSQL](https://www.postgresql.org/download/)
+[Ruby](https://www.ruby-lang.org/en/ownload/)
 
 ### Usage
 
 To run the project, execute the following command:
 
 ```sh
-  psql -U postgres
+irb
 ```
 
 ### Run tests
