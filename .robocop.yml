@@ -1,11 +1,10 @@
-# .rubocop.yml
-
 AllCops:
   NewCops: enable
   Exclude:
     - "Guardfile"
     - "Rakefile"
     - "node_modules/**/*"
+
   DisplayCopNames: true
 
 Layout/LineLength:
@@ -17,7 +16,9 @@ Metrics/AbcSize:
 Metrics/ClassLength:
   Max: 150
 Metrics/BlockLength:
-  Max: 30  # Removed the IgnoredMethods parameter
+  IgnoredMethods: ['describe']
+  Max: 30
+
 
 Style/Documentation:
   Enabled: false
