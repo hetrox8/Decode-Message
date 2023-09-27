@@ -2,8 +2,9 @@
 
 ## Getting Started
 
-This repository includes files with plain Ruby:
+This repository includes files with plain SQL that can be used to recreate a database:
 
+- Use [schema_based_on_diagram.sql](./schema.sql) to create all tables.
 
 <a name="readme-top"></a>
 
@@ -54,19 +55,20 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Decode a Morse code message] <a name="about-project"></a>
+# 📖 [medical clinic database] <a name="about-project"></a>
 
 > In this project, I use a relational database to create the initial data structure for  Medical clinic . I create a table to store patient's information, insert some data into it, and query it.
 
-**[Decode a Morse code message]** this is a Decode a Morse code message is a ruby project that tries to decode the  Morse code.
+**[medical clinic database]** this is a medical database where we can track patients medical history from previous dates and institution where admitted.
+
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
 <details>
-  <summary>Ruby</summary>
+  <summary>Database</summary>
   <ul>
-    <li><a href="https://www.ruby-lang.org/en/">Ruby</a></li>
+    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
   </ul>
 </details>
 
@@ -74,7 +76,8 @@ After you're finished please remove all the comments and instructions!
 
 ### Key Features <a name="key-features"></a>
 
-- **[Use Ruby Basics]**
+- **[Create database]**
+- **[modify database to many-many]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -84,7 +87,7 @@ After you're finished please remove all the comments and instructions!
 
 To get a local copy up and running, follow these steps.
 
-- Clone the [project using github](https://github.com/hetrox8/Decode-Message.git)
+- Clone the [project using github](https://github.com/hetrox8/medics_db.git)
 
 
 
@@ -102,14 +105,14 @@ After cloning this repository to your desired folder:
 
 Install this project with:
 
-[Ruby](https://www.ruby-lang.org/en/ownload/)
+[PostgreSQL](https://www.postgresql.org/download/)
 
 ### Usage
 
 To run the project, execute the following command:
 
 ```sh
-irb
+  psql -U postgres
 ```
 
 ### Run tests
@@ -146,7 +149,10 @@ To run tests, run the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Decode message]**
+- [ ] **[Add patients table]**
+- [ ] **[Add medical histories table]**
+- [ ] **[Add invoices table]**
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -187,4 +193,3 @@ I would like to thank Microverse for giving me this wonderful opportunity to wor
 This project is [MIT](./LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
