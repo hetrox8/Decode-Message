@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Define a hash to map Morse code to characters
 MORSE_CODE = {
   '.-' => 'A', '-...' => 'B', '-.-.' => 'C', '-..' => 'D', '.' => 'E',
