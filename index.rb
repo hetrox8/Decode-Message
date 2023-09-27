@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # Define a hash to map Morse code to characters
 MORSE_CODE = {
   '.-' => 'A', '-...' => 'B', '-.-.' => 'C', '-..' => 'D', '.' => 'E',
@@ -19,7 +17,7 @@ end
 
 # Method to decode an entire word in Morse code and return the string representation
 def decode_word(morse_word)
-  morse_word.split(' ').map { |char| decode_char(char) }.join
+  morse_word.split.map { |char| decode_char(char) }.join
 end
 
 # Method to decode the entire message in Morse code
