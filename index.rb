@@ -1,14 +1,20 @@
-def decode(morse)
-  morse_code = {
-    'A' => '.-', 'B' => '-...', 'C' => '-.-.', 'D' => '-..', 'E' => '.', 'F' => '..-.', 'G' => '--.', 'H' => '....',
-    'I' => '..', 'J' => '.---', 'K' => '-.-', 'L' => '.-..', 'M' => '--', 'N' => '-.', 'O' => '---', 'P' => '.--.',
-    'Q' => '--.-', 'R' => '.-.', 'S' => '...', 'T' => '-', 'U' => '..-', 'V' => '...-', 'W' => '.--',
-    'X' => '-..-', 'Y' => '-.--', 'Z' => '--..', ' ' => '/'
-  }
-  morse = morse.gsub!('  ', '/')
-  morse.split.each do |el|
-    print morse_code.key(el)
-  end
+require_relative 'alphabet'
+
+
+# Method to decode character in uppercase
+def decode_char(morse_alphabet)
+  ALPHABET[morse_alphabet]
 end
 
-decode('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
+# Method to decode single word
+def decode_word(morse_word)
+  morse_word.split.map { |morse_char| decode_char(morse_char) }.join
+end
+
+# Method to Decode a sentence
+def decode(sentence)
+  sentence.split('   ').map { |morse_word| decode_word(morse_word) }.join(' ')
+end
+
+# Return a box full of rubies
+puts decode('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
